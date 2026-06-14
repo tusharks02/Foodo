@@ -1,0 +1,243 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bgcl: rgb(246, 246, 246);
+}
+
+/* Navigation bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(17, 16, 16);
+    height: 80px;
+    opacity: 0.9;
+}
+
+#navbar #logo {
+    margin: 0px 10px;
+}
+
+#navbar img {
+    margin: 0px 9px;
+    height: 55px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+#navbar li {
+    list-style: none;
+    border-radius: 5px;
+    margin: 0px 7px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 10px;
+}
+
+#navbar a:hover {
+    background-color: rgb(121, 113, 113);
+}
+
+
+/* Home */
+
+#home::before {
+    content: "";
+    background: url(../img/bg3.jpg) no-repeat top center/cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 418px;
+    opacity: 0.80;
+    top: 0px;
+}
+
+#home {
+    height: 338px;
+    overflow: auto;
+}
+
+#home h1 {
+    margin: 35px;
+    color: rgb(255, 255, 255);
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    padding: 4px 10px;
+    margin: 5px 30px;
+}
+
+#home div {
+    display: flex;
+    justify-content: center;
+}
+
+#home button {
+    font-size: 1.2rem;
+    border: 2px solid rgb(25, 20, 20);
+    background-color: rgb(125, 127, 129);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+#home button:hover {
+    background-color: rgb(88, 82, 82);
+}
+
+
+/* #Services */
+
+#services-container {
+    /* margin: 20px 5px; */
+    background-color: var(--bgcl);
+}
+
+.services {
+    display: flex;
+
+}
+
+.service {
+    margin: 5px;
+    padding: 5px;
+}
+
+.service img {
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+.service p {
+    padding: 3px;
+}
+
+/* Client Section */
+
+
+#clientbox::before {
+    content: "";
+    position: absolute;
+    background: url(../img/bg2.jpg);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.50;
+    /* top: 0px; */
+}
+
+#clientbox {
+    position: relative;
+}
+
+.clients {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.clients img {
+    height: 80px;
+    margin: 5px 30px;
+}
+
+/* Contact Us */
+
+
+#contactbox {
+    position: relative;
+}
+
+.formbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactbox form {
+    width: 40%;
+}
+
+.form-group {
+    margin: 4px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: rgb(96, 95, 95);
+}
+
+#contactbox .btn {
+    display: block;
+    margin: 3px auto;
+    padding: 5px;
+    width: 25%;
+    font-size: 1.1rem;
+    border: 2px solid grey;
+    border-radius: 15rem;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+#contactbox .btn:hover {
+    background-color: rgb(178, 178, 177);
+}
+
+/* Footer */
+
+footer {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+}
+
+
+/* Utility Class */
+
+.h-primary {
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.h-secondary {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.center {
+    text-align: center;
+}
