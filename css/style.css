@@ -141,7 +141,7 @@ html {
 #clientbox::before {
     content: "";
     position: absolute;
-    background: url(../img/bg2.jpg);
+    background: url(../img/bg2.jpg) no-repeat center center/cover;
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -169,6 +169,16 @@ html {
 
 /* Contact Us */
 
+#contactbox::before {
+    content: "";
+    position: absolute;
+    background: url(../img/contactus.jpg) no-repeat center center/cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.70;
+    /* top: 0px; */
+}
 
 #contactbox {
     position: relative;
@@ -205,16 +215,17 @@ html {
     display: block;
     margin: 3px auto;
     padding: 5px;
-    width: 25%;
+    width: 40%;
     font-size: 1.1rem;
     border: 2px solid grey;
     border-radius: 15rem;
     cursor: pointer;
     transition: all 0.1s;
+    background-color: rgb(194, 193, 193);
 }
 
 #contactbox .btn:hover {
-    background-color: rgb(178, 178, 177);
+    background-color: rgb(126, 126, 126);
 }
 
 /* Footer */
